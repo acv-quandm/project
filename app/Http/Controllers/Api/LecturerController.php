@@ -11,9 +11,33 @@ class LecturerController extends Controller
 {
     private $table = 'lecturers';
 
-    public function index()
+    public function index(Request $request)
     {
-        return Lecturer::with('department')->get();
+        $data = Lecturer::with(['department']);
+
+        if($request->has('query'))
+        {
+            if($request->input('query') != null && $request->input('query') != '')
+            {
+                $columns = Schema::getColumnListing('lecturers');
+
+                $data->where(function ($query) use ($columns,$request){
+                    foreach ($columns as $column)
+                    {
+                        $query->orWhere($column,'like','%'.$request->input('query').'%');
+                    }
+                });
+
+            }
+        }
+        if($request->has('limit'))
+        {
+            $data = $data->paginate($request->limit);
+        }
+        else{
+            $data = $data->paginate(30);
+        }
+        return $data;
     }
 
     /**

@@ -11,9 +11,24 @@ class DepartmentController extends Controller
 {
     private $table = 'departments';
 
-    public function index()
+    public function index(Request $request)
     {
-        return Department::with('lecturers')->get();
+        $data = Department::with('lecturers');
+        if($request->has('query'))
+        {
+            $columns = Schema::getColumnListing('departments');
+            $data->where(function ($query) use ($columns,$request){
+                foreach ($columns as $column)
+                {
+                    $query->orWhere($column,'%like%',$request->query);
+                }
+            });
+        }
+        if($request->has('limit'))
+        {
+            return $data->paginate($request->limit);
+        }
+        return $data->paginate(30);
     }
 
     /**

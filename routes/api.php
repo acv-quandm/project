@@ -16,3 +16,5 @@ use Illuminate\Http\Request;
 Route::resource('departments','DepartmentController');
 Route::resource('drugs','DrugController');
 Route::resource('lecturers','LecturerController');
+Route::resource('healths','HealthController');
+

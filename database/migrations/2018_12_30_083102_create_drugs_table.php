@@ -17,6 +17,7 @@ class CreateDrugsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('use');
+            $table->integer('amount');
             $table->timestamps();
         });
     }
