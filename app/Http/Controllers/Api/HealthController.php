@@ -17,7 +17,7 @@ class HealthController extends Controller
      */
     public function index(Request $request)
     {
-        $data = Health::with(['lecturer','drugs']);
+        $data = Health::with(['lecturer','drugs','drugs_health']);
 
         if($request->has('query'))
         {
@@ -30,6 +30,9 @@ class HealthController extends Controller
                     {
                         $query->orWhere($column,'like','%'.$request->input('query').'%');
                     }
+                    $query->orWhereHas('lecturer',function($queryHas) use ($request){
+                        $queryHas->where('name','like','%'.$request->input('query').'%');
+                    });
                 });
 
             }
@@ -40,10 +43,10 @@ class HealthController extends Controller
         }
         if($request->has('limit'))
         {
-            return $data->paginate($request->limit);
+            return $data->orderBy('updated_at','desc')->paginate($request->limit);
         }
 
-        return $data->paginate(30);
+        return $data->orderBy('updated_at','desc')->paginate(30);
     }
 
     /**
@@ -76,6 +79,10 @@ class HealthController extends Controller
                 }
             }
             $health->save();
+            if($request->has('drugs_health'))
+            {
+                $health->drugs()->sync($request->drugs_health);
+            }
             return $health;
         }catch (\Exception $exception)
         {
@@ -116,7 +123,29 @@ class HealthController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try{
+            $columns = Schema::getColumnListing($this->table);
+            $keys = $request->keys();
+            $health = Health::findOrFail($id);
+            foreach ($keys as $key)
+            {
+                if(in_array($key,$columns))
+                {
+                    $health->$key = $request->input($key);
+                }
+            }
+            $health->save();
+            if($request->has('drugs_health'))
+            {
+                $health->drugs()->sync($request->drugs_health);
+            }
+            return $health;
+        }catch (\Exception $exception)
+        {
+            return response()->json([
+                'error' => $exception->getMessage()
+            ],403);
+        }
     }
 
     /**

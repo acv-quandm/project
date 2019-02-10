@@ -19,6 +19,7 @@ class CreateHealthsTable extends Migration
             $table->text('symptom')->nullable();
             $table->text('diagnose')->nullable();
             $table->text('result')->nullable();
+            $table->text('note')->nullable();
             $table->timestamps();
         });
     }

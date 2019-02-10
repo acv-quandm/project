@@ -13,4 +13,6 @@
 
 Route::get('/',['uses' => 'HomeController@index']);
 Route::resource('/lecturers','LecturerController');
-
+Route::resource('/departments','DepartmentController');
+Route::resource('/drugs','DrugController');
+Route::resource('/healths','HealthController');

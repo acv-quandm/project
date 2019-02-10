@@ -11,9 +11,33 @@ class DrugController extends Controller
 {
     private $table = 'drugs';
 
-    public function index()
+    public function index(Request $request)
     {
-        return Drug::get();
+        $data = new Drug();
+
+        if($request->has('query'))
+        {
+            if($request->input('query') != null && $request->input('query') != '')
+            {
+                $columns = Schema::getColumnListing('drugs');
+
+                $data->where(function ($query) use ($columns,$request){
+                    foreach ($columns as $column)
+                    {
+                        $query->orWhere($column,'like','%'.$request->input('query').'%');
+                    }
+                });
+
+            }
+        }
+        if($request->has('limit'))
+        {
+            $data = $data->paginate($request->limit);
+        }
+        else{
+            $data = $data->paginate(30);
+        }
+        return $data;
     }
 
     /**
