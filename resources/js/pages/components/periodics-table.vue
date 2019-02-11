@@ -1,13 +1,13 @@
 <template>
     <div class="container-fluid">
-        <h4 class="c-grey-900 mT-10 mB-30">Quản lý sức khỏe giảng viên</h4>
+        <h4 class="c-grey-900 mT-10 mB-30">Quản lý các đợi khám sức khỏe</h4>
         <div style="display: inline-block;">
             <button type="button" class="btn btn-info mB-20" data-toggle="modal" data-target="#create-update-item" @click="action = 'create';resetTemp()">Thêm mới</button>
         </div>
         <div class="row">
             <div class="col-12">
                 <div class="form-group">
-                    <label for="">Tìm kiếm</label>
+                    <label>Tìm kiếm</label>
                     <input type="text" class="form-control" @keydown.enter="getInfo(page,query)" v-model="query">
                 </div>
                 <div class="row" v-if="loading">
@@ -26,10 +26,10 @@
                         <thead>
                         <tr>
                             <th scope="col">#</th>
+                            <th scope="col">Tên đợi khám</th>
                             <th scope="col">Thời gian khám</th>
-                            <th scope="col">Người được khám</th>
-                            <th scope="col">Chuẩn đoán</th>
-                            <th scope="col">Kết quả</th>
+                            <th scope="col">Địa điểm khám</th>
+                            <th scope="col">Nội dung khám</th>
                             <th scope="col">Actions</th>
                         </tr>
                         </thead>
@@ -37,13 +37,14 @@
                         <template v-for="item in list">
                             <tr>
                                 <th scope="row">{{item.id}}</th>
-                                <td>{{item.created_at}}</td>
-                                <td>{{item.lecturer != null ? item.lecturer.name: ''}}</td>
-                                <td>{{item.diagnose}}</td>
-                                <td>{{item.result}}</td>
+                                <td>{{item.name}}</td>
+                                <td>{{item.time_start | formatDateTimeFilter}}</td>
+                                <td>{{item.location}}</td>
+                                <td>{{item.info}}</td>
                                 <td>
                                     <button class="btn btn-info" @click="editItem(item.id)">Sửa</button>
                                     <button class="btn btn-danger" @click="deleteItem(item.id)">Xóa</button>
+                                    <button class="btn btn-primary" @click="reportItem(item.id)">Báo cáo</button>
                                 </td>
                             </tr>
                         </template>
@@ -80,60 +81,20 @@
                         <div class="modal-body">
                             <div class="mT-30">
                                 <div class="form-group">
-                                    <label>Triệu chứng</label>
-                                    <input type="text" v-model="temp.symptom" required class="form-control" aria-describedby="emailHelp" placeholder="Điền triệu chứng">
+                                    <label>Tên đợi khám</label>
+                                    <input type="text" v-model="temp.name" required class="form-control" aria-describedby="emailHelp" placeholder="Điền tên đợi khám">
                                 </div>
                                 <div class="form-group">
-                                    <label>Chuẩn đoán</label>
-                                    <input type="text" v-model="temp.diagnose" class="form-control" placeholder="Chuẩn đoán">
+                                    <label>Thời gian khám</label>
+                                    <input type="datetime-local" v-model="temp.time_start" required class="form-control" aria-describedby="emailHelp" placeholder="Thời gian khám">
                                 </div>
                                 <div class="form-group">
-                                    <label>Kết quả</label>
-                                    <input type="text" class="form-control" v-model="temp.result"  placeholder="Nhập kết quả">
+                                    <label>Địa điểm khám</label>
+                                    <input type="text" v-model="temp.location" class="form-control" placeholder="Nhập địa điểm khám">
                                 </div>
                                 <div class="form-group">
-                                    <label>Lưu ý</label>
-                                    <input type="text" class="form-control" v-model="temp.note"  placeholder="Nhập các lưu ý/ hẹn khám lại">
-                                </div>
-                               <div class="row" v-for="(heath_drug,index) in temp.drugs_health">
-                                   <div class="col-4">
-                                       <div class="form-group">
-                                           <label>Thuốc chữa bệnh</label>
-                                           <select name="" v-model="heath_drug.drug_id" class="form-control" id="">
-                                               <template v-for="drug in drugs">
-                                                   <option :value="drug.id">{{drug.name}}</option>
-                                               </template>
-                                           </select>
-                                       </div>
-                                   </div>
-                                   <div class="col-4">
-                                       <div class="form-group">
-                                           <label>Cách sử dụng</label>
-                                           <input v-model="heath_drug.uses" type="text" class="form-control">
-                                       </div>
-                                   </div>
-                                   <div class="col-3">
-                                       <div class="form-group">
-                                           <label>Số lượng</label>
-                                           <input v-model="heath_drug.quantum" type="number" :max="getMax(heath_drug.drug_id)" class="form-control">
-                                       </div>
-                                   </div>
-                                   <div class="col-1">
-                                       <div class="form-group">
-                                           <button type="button" class="btn btn-default" @click="unsetDrug(index)"><i class="icon icon-stop"></i></button>
-                                       </div>
-                                   </div>
-                               </div>
-                                <div class="form-group" v-if="action == 'create'">
-                                    <button class="btn btn-info" type="button" @click="pushItem">Thêm 1 loại thuốc</button>
-                                </div>
-                                <div class="form-group" v-if="action == 'create'">
-                                    <label>Nhập ID người bệnh</label>
-                                    <input type="text" required class="form-control" v-model="temp.lecturer_id"  placeholder="Điền ID người bệnh">
-                                </div>
-                                <div class="form-group" v-if="action == 'create'">
-                                    <label>Nhập ID đợt khám bệnh (nếu có)</label>
-                                    <input type="text" class="form-control" v-model="temp.periodic_id"  placeholder="Điền ID đợt khám bệnh (nếu có)">
+                                    <label>Nội dung khám</label>
+                                    <input type="text" class="form-control" v-model="temp.info"  placeholder="Nội dung khám">
                                 </div>
                             </div>
                         </div>
@@ -175,7 +136,34 @@
                     <form @submit.prevent="removeItem">
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-danger">Xóa giảng viên này</button>
+                            <button type="submit" class="btn btn-danger">Xóa đợt khám này</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="report-item" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Báo cáo về thông tin đợt khám</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <canvas id="pie-chart" width="800" height="450"></canvas>
+                    </div>
+                    <div class="row" v-if="loading">
+                        <div class="col-md-12">
+                            <div class="loader">
+                                <div class="loader-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <form @submit.prevent="removeItem">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </form>
                 </div>
@@ -184,48 +172,43 @@
     </div>
 </template>
 <script>
+    import Chart from 'chart.js'
+    import moment from 'moment'
     export default {
-        name: 'Lecturers-Table',
+        name: 'Periodics-Table',
+        computed: {
+          departmentName(){
+              return this.departments.map(item => {
+                  return item.name
+              })
+          }
+        },
         data() {
             return {
                 list: [
 
                 ],
                 temp: {
-                    lecturer_id: '',
-                    symptom: '',
-                    diagnose: '',
-                    result: '',
-                    note: '',
-                    drugs: [],
-                    periodic_id: null
+                    name:'',
+                    time_start: '',
+                    info: '',
+                    location: '',
                 },
                 loading: false,
                 page: 1,
                 query: null,
                 action: 'create',
                 last_page: 1,
-                drugs: [
-                    {
-                        drug_id: "",
-                        quantum: "",
-                        uses: ""
-                    }
-                ]
+                departments: [],
+                myChart: null
             }
         },
         mounted(){
             this.getInfo()
-            this.getDrugs()
         },
         methods: {
-            checkSelected(id) {
-                return !this.temp.drugs_health.some(tempDrug => {
-                    return tempDrug.drug_id == id
-                })
-            },
             getInfo(page = 1,query = null){
-                axios.get('/api/healths',{
+                axios.get('/api/periodics',{
                     params: {
                         page: page,
                         query: query
@@ -236,41 +219,15 @@
             },
             resetTemp(){
               this.temp = {
-                  lecturer_id: '',
-                  symptom: '',
-                  diagnose: '',
-                  result: '',
-                  note: '',
-                  drugs_health: [
-                      {
-                          drug_id: "",
-                          quantum: "",
-                          uses: ""
-                      }
-                  ],
-                  periodic_id: null
+                  name:'',
+                  time_start: '',
+                  info: '',
+                  location: ''
               }
-            },
-            pushItem(){
-              this.temp.drugs_health.push({
-                  drug_id: "",
-                  quantum: "",
-                  uses: ""
-              })
-            },
-            getDrugs(){
-                axios.get('/api/drugs',{
-                    params: {
-                        page: 1,
-                        limit: 1000000
-                    }
-                }).then(response => {
-                    this.drugs = response.data.data
-                })
             },
             createItem(){
                 this.loading = true
-                axios.post('/api/healths',this.temp).then(response => {
+                axios.post('/api/periodics',this.temp).then(response => {
                     this.loading = false
                     this.getInfo(this.page,this.query)
                     $('#create-update-item').modal('hide')
@@ -281,7 +238,7 @@
             },
             updateItem(){
                 this.loading = true
-                axios.put('/api/healths/'+this.temp.id,this.temp).then(response => {
+                axios.put('/api/periodics/'+this.temp.id,this.temp).then(response => {
                     this.loading = false
                     this.getInfo(this.page,this.query)
                     $('#create-update-item').modal('hide')
@@ -291,18 +248,10 @@
                 })
             },
             editItem(id){
-                this.temp = this.list.find(item => {
+                this.temp = JSON.parse(JSON.stringify(this.list.find(item => {
                     return item.id == id
-                })
-                if(this.temp.drugs_health.length == 0){
-                    this.temp.drugs_health = [
-                        {
-                            drug_id: "",
-                            quantum: "",
-                            uses: ""
-                        }
-                    ]
-                }
+                })))
+                this.temp.time_start = this.temp.time_start.replace(' ','T')
                 this.action = 'update'
                 $('#create-update-item').modal('show')
             },
@@ -314,7 +263,7 @@
             },
             removeItem(){
                 this.loading = true
-                axios.delete('/api/healths/'+this.temp.id).then(response => {
+                axios.delete('/api/periodics/'+this.temp.id).then(response => {
                     this.loading = false
                     this.getInfo(this.page,this.query)
                     $('#remove-item').modal('hide')
@@ -323,24 +272,43 @@
                     console.log(err)
                 })
             },
-            unsetDrug(index){
-                this.temp.drugs_health = this.temp.drugs_health.filter((item,indexItem) => {
-                    return index != indexItem
+            reportItem(id){
+                if(this.myChart != null){
+                    this.myChart.destroy()
+                }
+                this.temp = JSON.parse(JSON.stringify(this.list.find(item => {
+                    return item.id == id
+                })))
+                this.temp.time_start = this.temp.time_start.replace(' ','T')
+                $('#report-item').modal('show')
+                axios.post('/api/periodics/'+ this.temp.id +'/report').then(response => {
+                    let result = response.data
+                    let labels = result.labels
+                    let data = result.data
+                    this.myChart = new Chart(document.getElementById("pie-chart"), {
+                        type: 'pie',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: "Population (millions)",
+                                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                                data: data
+                            }]
+                        },
+                        options: {
+                            title: {
+                                display: true,
+                                text: 'Thống kê thông tin đợt khám'
+                            }
+                        }
+                    });
                 })
-            },
-            getMax(id){
-                if(id == undefined || id == null){
-                    return null
-                }
-                else{
-                    let drug = this.drugs.find(item => {
-                        return item.id == id
-                    })
-                    if(drug == undefined){
-                        return null
-                    }
-                    return drug.amount
-                }
+
+            }
+        },
+        filters:{
+            formatDateTimeFilter(dateTime){
+                return moment(dateTime).format('YYYY/MM/DD HH:mm:ss')
             }
         }
     }

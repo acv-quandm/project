@@ -1,4 +1,7 @@
 {
+    "/js/common.js": "/js/common.js",
+    "/css/style.css": "/css/style.css",
+    "/js/periodics.js": "/js/periodics.js",
     "/js/lecturers.js": "/js/lecturers.js",
     "/js/healths.js": "/js/healths.js",
     "/js/drugs.js": "/js/drugs.js",

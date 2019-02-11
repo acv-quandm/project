@@ -11,10 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
-// mix.js('resources/js/index.js', 'public/js/common.js')
-// mix.sass('resources/sass/index.scss','public/css/style.css')
+mix.js('resources/js/index.js', 'public/js/common.js')
+mix.sass('resources/sass/index.scss','public/css/style.css')
 
 mix.js('resources/js/pages/lecturers.js', 'public/js/lecturers.js')
 mix.js('resources/js/pages/departments.js', 'public/js/departments.js')
 mix.js('resources/js/pages/drugs.js', 'public/js/drugs.js')
 mix.js('resources/js/pages/healths.js', 'public/js/healths.js')
+mix.js('resources/js/pages/periodics.js', 'public/js/periodics.js')
+mix.copyDirectory('resources/static', 'public/assets/static');

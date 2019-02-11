@@ -2,6 +2,11 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\CheckBanGiamHieu;
+use App\Http\Middleware\CheckGiaoVien;
+use App\Http\Middleware\CheckLogin;
+use App\Http\Middleware\CheckPhongBoMon;
+use App\Http\Middleware\CheckPhongYTe;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -62,6 +67,11 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'check.login' => CheckLogin::class,
+        'check.giaovien' => CheckGiaoVien::class,
+        'check.bomon' => CheckPhongBoMon::class,
+        'check.bangiamhieu' => CheckBanGiamHieu::class,
+        'check.yte' => CheckPhongYTe::class
     ];
 
     /**

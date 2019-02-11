@@ -3,52 +3,42 @@
 namespace App\Http\Controllers\Api;
 
 use App\Department;
-use App\Drug;
 use App\Health;
+use App\Periodic;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Schema;
 
-class HealthController extends Controller
+class PeriodicController extends Controller
 {
-    public $table = 'healths';
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    private $table = 'periodics';
     public function index(Request $request)
     {
-        $data = Health::with(['lecturer','drugs','drugs_health']);
+        $data = new Periodic();
 
         if($request->has('query'))
         {
             if($request->input('query') != null && $request->input('query') != '')
             {
-                $columns = Schema::getColumnListing('healths');
+                $columns = Schema::getColumnListing('periodics');
 
                 $data->where(function ($query) use ($columns,$request){
                     foreach ($columns as $column)
                     {
                         $query->orWhere($column,'like','%'.$request->input('query').'%');
                     }
-                    $query->orWhereHas('lecturer',function($queryHas) use ($request){
-                        $queryHas->where('name','like','%'.$request->input('query').'%');
-                    });
                 });
 
             }
         }
-        if($request->has('lecturer_id'))
-        {
-            $data->where('lecturer_id','=',$request->lecturer_id);
-        }
         if($request->has('limit'))
         {
-            return $data->orderBy('updated_at','desc')->paginate($request->limit);
+            $data = $data->paginate($request->limit);
         }
-
-        return $data->orderBy('updated_at','desc')->paginate(30);
+        else{
+            $data = $data->paginate(30);
+        }
+        return $data;
     }
 
     /**
@@ -72,26 +62,18 @@ class HealthController extends Controller
         try{
             $columns = Schema::getColumnListing($this->table);
             $keys = $request->keys();
-            $health = new Health();
+            $periodic =  new Periodic();
             foreach ($keys as $key)
             {
                 if(in_array($key,$columns))
                 {
-                    $health->$key = $request->input($key);
+                    $periodic->$key = $request->input($key);
                 }
             }
-            $health->save();
-            if($request->has('drugs_health'))
-            {
-                $health->drugs()->sync($request->drugs_health);
-                foreach ($request->drugs_health as $item){
-                    $drug = Drug::findOrFail($item['drug_id']);
-                    $drug->amount = $drug->amount - $item['quantum'];
-                    $drug->save();
-                }
-            }
-            return $health;
-        }catch (\Exception $exception)
+            $periodic->save();
+            return $periodic;
+        }
+        catch (\Exception $exception)
         {
             return response()->json([
                 'error' => $exception->getMessage()
@@ -133,21 +115,18 @@ class HealthController extends Controller
         try{
             $columns = Schema::getColumnListing($this->table);
             $keys = $request->keys();
-            $health = Health::findOrFail($id);
+            $periodic = Periodic::findOrFail($id);
             foreach ($keys as $key)
             {
                 if(in_array($key,$columns))
                 {
-                    $health->$key = $request->input($key);
+                    $periodic->$key = $request->input($key);
                 }
             }
-            $health->save();
-            if($request->has('drugs_health'))
-            {
-                $health->drugs()->sync($request->drugs_health);
-            }
-            return $health;
-        }catch (\Exception $exception)
+            $periodic->save();
+            return $periodic;
+        }
+        catch (\Exception $exception)
         {
             return response()->json([
                 'error' => $exception->getMessage()
@@ -163,9 +142,30 @@ class HealthController extends Controller
      */
     public function destroy($id)
     {
-        $health = Health::findOrFail($id);
-        $health->delete();
-        $health->drugs_health()->delete();
-        return $health;
+        $periodic = Periodic::findOrFail($id);
+        $periodic->delete();
+        return $periodic;
+    }
+    public function report($id){
+        $periodic = Periodic::with(['healths.lecturer'])->findOrFail($id);
+        $departments = Department::get();
+        $labels = [];
+        foreach ($departments as $department){
+            $labels[] = $department->name;
+        }
+        $data = [];
+        foreach ($departments as $department){
+            $count = 0;
+            foreach ($periodic->healths as $health){
+                if($health->lecturer->department_id == $department->id){
+                    $count++;
+                }
+            }
+            $data[] = $count;
+        }
+        return [
+            'labels' => $labels,
+            'data' => $data
+        ];
     }
 }

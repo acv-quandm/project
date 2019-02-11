@@ -17,4 +17,5 @@ Route::resource('departments','DepartmentController');
 Route::resource('drugs','DrugController');
 Route::resource('lecturers','LecturerController');
 Route::resource('healths','HealthController');
-
+Route::resource('periodics','PeriodicController');
+Route::post('periodics/{id}/report','PeriodicController@report');
