@@ -85,6 +85,14 @@
                         <span class="title">Quản lý đợt khám</span>
                     </a>
                 </li>
+                    <li class="nav-item">
+                        <a class='sidebar-link' href="{{route('troubles.index')}}">
+                <span class="icon-holder">
+                  <i class="icon icon-trello"></i>
+                </span>
+                            <span class="title">Quản lý sự cố</span>
+                        </a>
+                    </li>
                 <li class="nav-item">
                     <a class='sidebar-link' href="{{route('drugs.index')}}">
                 <span class="icon-holder">
@@ -251,12 +259,6 @@
                             </div>
                         </a>
                         <ul class="dropdown-menu fsz-sm">
-                            <li>
-                                <a href="" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
-                                    <i class="ti-user mR-10"></i>
-                                    <span>Thông tin cá nhân</span>
-                                </a>
-                            </li>
                             <li>
                                 <a href="" data-toggle="modal" data-target="#replace-password" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
                                     <i class="icon icon-lock"></i>

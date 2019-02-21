@@ -53,14 +53,14 @@
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item">
-                                <a class="page-link" href="#" v-if="page > 1" tabindex="-1">Previous</a>
+                                <a class="page-link" href="#" @click="getInfo(page-1,query)" v-if="page > 1" tabindex="-1">Previous</a>
                             </li>
                             <template v-for="i in last_page">
-                                <li :class="'page-item' + (page == i ? ' active': '') "><a class="page-link" href="#">{{i}}</a></li>
+                                <li :class="'page-item' + (page == i ? ' active': '') "><a class="page-link" @click="getInfo(i,query)" href="#">{{i}}</a></li>
                             </template>
 
                             <li class="page-item">
-                                <a class="page-link" href="#" v-if="page < last_page">Next</a>
+                                <a class="page-link" @click="getInfo(page+1,query)" href="#" v-if="page < last_page">Next</a>
                             </li>
                         </ul>
                     </nav>

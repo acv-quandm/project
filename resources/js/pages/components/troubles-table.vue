@@ -1,8 +1,19 @@
 <template>
     <div class="container-fluid">
-        <h4 class="c-grey-900 mT-10 mB-30">Các khoa</h4>
+        <h4 class="c-grey-900 mT-10 mB-30">Quản lý sự cố</h4>
         <div style="display: inline-block;">
             <button type="button" class="btn btn-info mB-20" data-toggle="modal" data-target="#create-update-item" @click="action = 'create';resetTemp()">Thêm mới</button>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="row" v-if="loading">
+                    <div class="col-md-12">
+                        <div class="loader">
+                            <div class="loader-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -11,7 +22,9 @@
                         <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Tên khoa</th>
+                            <th scope="col">Tên sự cố</th>
+                            <th scope="col">Nội dung sự cố</th>
+                            <th scope="col">Người tạo</th>
                             <th scope="col">Actions</th>
                         </tr>
                         </thead>
@@ -20,6 +33,7 @@
                             <tr>
                                 <th scope="row">{{item.id}}</th>
                                 <td>{{item.name}}</td>
+                                <td>{{item.content}}</td>
                                 <td>
                                     <button class="btn btn-info" @click="editItem(item.id)">Sửa</button>
                                     <button class="btn btn-danger" @click="deleteItem(item.id)">Xóa</button>
@@ -50,7 +64,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thêm khoa</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Thêm một đợt khám</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -59,8 +73,14 @@
                         <div class="modal-body">
                             <div class="mT-30">
                                 <div class="form-group">
-                                    <label>Điền tên khoa</label>
-                                    <input type="text" v-model="temp.name" required class="form-control" name="name" aria-describedby="emailHelp" placeholder="Điền tên khoa">
+                                    <label>Tên sự cố</label>
+                                    <input type="text" v-model="temp.name" required class="form-control" aria-describedby="emailHelp" placeholder="Tên sự cố">
+                                </div>
+                                <div class="form-group">
+                                    <label>Nội dung sự cố</label>
+                                    <textarea class="form-control" v-model="temp.content"  rows="5">
+
+                                    </textarea>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +122,7 @@
                     <form @submit.prevent="removeItem">
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-danger">Xóa mục này</button>
+                            <button type="submit" class="btn btn-danger">Xóa giảng viên này</button>
                         </div>
                     </form>
                 </div>
@@ -113,27 +133,50 @@
 <script>
     export default {
         name: 'Lecturers-Table',
+        props: {
+            user_id: {
+                required: true,
+            }
+        },
         data() {
             return {
                 list: [
 
                 ],
                 temp: {
-                    name: '',
+                    lecturer_id: '',
+                    symptom: '',
+                    diagnose: '',
+                    result: '',
+                    note: '',
+                    drugs: [],
+                    periodic_id: null
                 },
                 loading: false,
                 page: 1,
                 query: null,
                 action: 'create',
-                last_page: 1
+                last_page: 1,
+                drugs: [
+                    {
+                        drug_id: "",
+                        quantum: "",
+                        uses: ""
+                    }
+                ]
             }
         },
         mounted(){
             this.getInfo()
         },
         methods: {
+            checkSelected(id) {
+                return !this.temp.drugs_health.some(tempDrug => {
+                    return tempDrug.drug_id == id
+                })
+            },
             getInfo(page = 1,query = null){
-                axios.get('/api/departments',{
+                axios.get('/api/troubles',{
                     params: {
                         page: page,
                         query: query
@@ -144,12 +187,22 @@
             },
             resetTemp(){
               this.temp = {
-                  name: '',
+                  id: null,
+                  name:'',
+                  content: ''
               }
+            },
+            pushItem(){
+              this.temp.drugs_health.push({
+                  drug_id: "",
+                  quantum: "",
+                  uses: ""
+              })
             },
             createItem(){
                 this.loading = true
-                axios.post('/api/departments',this.temp).then(response => {
+                this.temp.user_id = this.user_id
+                axios.post('/api/troubles',this.temp).then(response => {
                     this.loading = false
                     this.getInfo(this.page,this.query)
                     $('#create-update-item').modal('hide')
@@ -160,7 +213,8 @@
             },
             updateItem(){
                 this.loading = true
-                axios.put('/api/departments/'+this.temp.id,this.temp).then(response => {
+                this.temp.user_id = this.user_id
+                axios.put('/api/troubles/'+this.temp.id,this.temp).then(response => {
                     this.loading = false
                     this.getInfo(this.page,this.query)
                     $('#create-update-item').modal('hide')
@@ -184,7 +238,7 @@
             },
             removeItem(){
                 this.loading = true
-                axios.delete('/api/departments/'+this.temp.id).then(response => {
+                axios.delete('/api/troubles/'+this.temp.id).then(response => {
                     this.loading = false
                     this.getInfo(this.page,this.query)
                     $('#remove-item').modal('hide')

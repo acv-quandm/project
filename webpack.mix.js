@@ -18,6 +18,7 @@ mix.js('resources/js/pages/lecturers.js', 'public/js/lecturers.js')
 mix.js('resources/js/pages/departments.js', 'public/js/departments.js')
 mix.js('resources/js/pages/drugs.js', 'public/js/drugs.js')
 mix.js('resources/js/pages/healths.js', 'public/js/healths.js')
+mix.js('resources/js/pages/troubles.js', 'public/js/troubles.js')
 mix.js('resources/js/pages/healths-history.js', 'public/js/healths-history.js')
 mix.js('resources/js/pages/periodics.js', 'public/js/periodics.js')
 mix.copyDirectory('resources/static', 'public/assets/static');

@@ -30,6 +30,11 @@
 <script>
     import moment from 'moment'
     export default {
+        props: {
+          user_id: {
+              required: true
+          }
+        },
         mounted(){
             this.getHealHistory()
         },
@@ -48,7 +53,8 @@
                 return color;
             },
             getHealHistory(){
-                axios.post('/api/1/healing-history').then(response => {
+                const vm = this
+                axios.post(`/api/${vm.user_id}/healing-history`).then(response => {
                     this.list = response.data
 
                     let thang = []

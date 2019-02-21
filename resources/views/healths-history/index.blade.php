@@ -1,7 +1,7 @@
 @extends('layout')
 @section('main-content')
     <div id='mainContent'>
-        <healths-history></healths-history>
+        <healths-history user_id={{\Illuminate\Support\Facades\Auth::user()->id}}></healths-history>
     </div>
 @endsection
 @section('scripts')

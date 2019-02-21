@@ -2,26 +2,24 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Imports\LecturersImport;
-use App\Lecturer;
+use App\Trouble;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Schema;
-use Maatwebsite\Excel\Facades\Excel;
 
-class LecturerController extends Controller
+class TroubleController extends Controller
 {
-    private $table = 'lecturers';
+    private $table = 'troubles';
 
     public function index(Request $request)
     {
-        $data = Lecturer::with(['department']);
+        $data = new Trouble();
 
         if($request->has('query'))
         {
             if($request->input('query') != null && $request->input('query') != '')
             {
-                $columns = Schema::getColumnListing('lecturers');
+                $columns = Schema::getColumnListing('troubles');
 
                 $data->where(function ($query) use ($columns,$request){
                     foreach ($columns as $column)
@@ -63,17 +61,18 @@ class LecturerController extends Controller
         try{
             $columns = Schema::getColumnListing($this->table);
             $keys = $request->keys();
-            $lecture = new Lecturer();
+            $trouble = new Trouble();
             foreach ($keys as $key)
             {
                 if(in_array($key,$columns))
                 {
-                    $lecture->$key = $request->input($key);
+                    $trouble->$key = $request->input($key);
                 }
             }
-            $lecture->save();
-            return $lecture;
-        }catch (\Exception $exception)
+            $trouble->save();
+            return $trouble;
+        }
+        catch (\Exception $exception)
         {
             return response()->json([
                 'error' => $exception->getMessage()
@@ -115,17 +114,19 @@ class LecturerController extends Controller
         try{
             $columns = Schema::getColumnListing($this->table);
             $keys = $request->keys();
-            $lecture = Lecturer::findOrFail($id);
+            $trouble = Trouble::findOrFail($id);
             foreach ($keys as $key)
             {
                 if(in_array($key,$columns))
                 {
-                    $lecture->$key = $request->input($key);
+                    $trouble->$key = $request->input($key);
                 }
             }
-            $lecture->save();
-            return $lecture;
-        } catch (\Exception $exception)
+            $trouble->save();
+            return $trouble;
+
+        }
+        catch (\Exception $exception)
         {
             return response()->json([
                 'error' => $exception->getMessage()
@@ -141,14 +142,8 @@ class LecturerController extends Controller
      */
     public function destroy($id)
     {
-        $lecture = Lecturer::findOrFail($id);
-        $lecture->delete();
-        return $lecture;
-    }
-    public function excel(Request $request){
-        Excel::import(new LecturersImport(), $request->file('file'));
-        return [
-            'message' => 'success'
-        ];
+        $trouble = Trouble::findOrFail($id);
+        $trouble->delete();
+        return $trouble;
     }
 }

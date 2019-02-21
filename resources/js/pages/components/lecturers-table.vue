@@ -3,7 +3,7 @@
         <h4 class="c-grey-900 mT-10 mB-30">Danh sách giảng viên</h4>
         <div style="display: inline-block;">
             <button type="button" class="btn btn-info mB-20" data-toggle="modal" data-target="#create-update-item" @click="action = 'create';resetTemp()">Thêm mới</button>
-            <button type="button" class="btn btn-info mB-20" data-toggle="modal" data-target="#create-excel">Tải lên excel</button>
+            <button type="button" data-toggle="modal" data-target="#create-update-item-excel" class="btn btn-success mB-20" >Tải lên excel</button>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -41,14 +41,14 @@
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end">
                             <li class="page-item">
-                                <a class="page-link" href="#" v-if="page > 1" tabindex="-1">Previous</a>
+                                <a class="page-link" href="#" @click="getInfo(page-1,query)" v-if="page > 1" tabindex="-1">Previous</a>
                             </li>
                             <template v-for="i in last_page">
-                                <li :class="'page-item' + (page == i ? ' active': '') "><a class="page-link" href="#">{{i}}</a></li>
+                                <li :class="'page-item' + (page == i ? ' active': '') "><a class="page-link" @click="getInfo(i,query)" href="#">{{i}}</a></li>
                             </template>
 
                             <li class="page-item">
-                                <a class="page-link" href="#" v-if="page < last_page">Next</a>
+                                <a class="page-link" @click="getInfo(page+1,query)" href="#" v-if="page < last_page">Next</a>
                             </li>
                         </ul>
                     </nav>
@@ -94,6 +94,40 @@
                                             <option :value="item.id">{{item.name}}</option>
                                         </template>
                                     </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" v-if="loading">
+                            <div class="col-md-12">
+                                <div class="loader">
+                                    <div class="loader-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" v-if="action == 'create'" class="btn btn-primary">Thêm mới</button>
+                            <button type="submit" v-if="action == 'update'" class="btn btn-primary">Update thông tin</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="create-update-item-excel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Thêm bằng Excel</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form method="post" enctype="multipart/form-data" @submit.prevent="uploadFile">
+                        <div class="modal-body">
+                            <div class="mT-30">
+                                <div class="form-group">
+                                    <label>Chọn file</label>
+                                    <input type="file" required @change="setFile">
                                 </div>
                             </div>
                         </div>
@@ -163,7 +197,9 @@
                 page: 1,
                 query: null,
                 action: 'create',
-                last_page: 1
+                last_page: 1,
+                file: null,
+                departments: [],
             }
         },
         mounted(){
@@ -171,6 +207,9 @@
             this.getDepartments()
         },
         methods: {
+            setFile(e){
+                this.file = e.target.files[0]
+            },
             getInfo(page = 1,query = null){
                 axios.get('/api/lecturers',{
                     params: {
@@ -179,6 +218,20 @@
                     }
                 }).then(response => {
                     this.list = response.data.data
+                })
+            },
+            uploadFile(){
+
+                let formData = new FormData()
+                formData.append('file',this.file)
+                this.loading = true
+                axios.post('/api/lecturers/excel',formData).then(response => {
+                    this.loading = false
+                    this.getInfo(this.page,this.query)
+                    $('#create-update-item-excel').modal('hide')
+                }).catch(err => {
+                    this.loading = false
+                    console.log(err)
                 })
             },
             resetTemp(){

@@ -6,23 +6,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f94c40f5-15d8-4287-acec-b9b507136eb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/components/healths-history.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/healths-history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/healths-history/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/pages/troubles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/trouble/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/HealthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/HealthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LecturerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LecturerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Drug.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Drug.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/DrugController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/DrugController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/LecturerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/LecturerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/departments.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/departments.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/drugs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/drugs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/healths-history.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/healths-history.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/healths.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/healths.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/lecturers.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/lecturers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/periodics.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/periodics.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/spec/mystyle/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/spec/mystyle/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/departments-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/departments-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/healths-history.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/healths-history.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/healths-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/healths-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/periodics-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/periodics-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/healths-history/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/healths-history/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -79,46 +89,46 @@
         <counts>
           <entry key="env" value="2" />
           <entry key="html" value="10" />
-          <entry key="js" value="28" />
+          <entry key="js" value="30" />
           <entry key="json" value="5" />
-          <entry key="php" value="122" />
+          <entry key="php" value="140" />
           <entry key="scss" value="1" />
           <entry key="txt" value="1" />
-          <entry key="vue" value="17" />
+          <entry key="vue" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="2" />
-          <entry key="Blade" value="21" />
+          <entry key="Blade" value="24" />
           <entry key="HTML" value="10" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="28" />
-          <entry key="PHP" value="101" />
+          <entry key="JavaScript" value="30" />
+          <entry key="PHP" value="116" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="1" />
-          <entry key="Vue.js" value="17" />
+          <entry key="Vue.js" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
           <entry key="env" value="40" />
-          <entry key="js" value="303" />
-          <entry key="php" value="9236" />
+          <entry key="js" value="335" />
+          <entry key="php" value="10079" />
           <entry key="scss" value="1" />
-          <entry key="vue" value="7579" />
+          <entry key="vue" value="8408" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="40" />
-          <entry key="Blade" value="2746" />
-          <entry key="JavaScript" value="303" />
-          <entry key="PHP" value="6490" />
+          <entry key="Blade" value="2861" />
+          <entry key="JavaScript" value="335" />
+          <entry key="PHP" value="7218" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="1" />
-          <entry key="Vue.js" value="7579" />
+          <entry key="Vue.js" value="8408" />
         </counts>
       </usages-collector>
     </session>
@@ -126,84 +136,88 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="113">
+              <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="212" selection-end-column="14" />
               <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
+                <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="e#3308#3315#1" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#div#0;n#template#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/healths-history.vue">
+        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="164">
+              <caret line="201" column="32" selection-start-line="201" selection-start-column="32" selection-end-line="201" selection-end-column="32" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#template#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/src/forms.html">
+        <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="112" column="42" selection-start-line="112" selection-start-column="42" selection-end-line="112" selection-end-column="42" />
+            <state relative-caret-position="110">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/spec/mystyle/index.scss">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/DrugController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="195">
+              <caret line="153" column="32" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/LecturerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="148" column="33" lean-forward="true" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
+              <folding>
+                <element signature="e#44#76#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Imports/LecturersImport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="149" column="10" selection-start-line="149" selection-start-column="10" selection-end-line="149" selection-end-column="10" />
-              <folding>
-                <element signature="e#5102#5109#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="161">
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AdminLTE-2.4.5/pages/UI/modals.html">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="538" column="60" selection-start-line="538" selection-start-column="60" selection-end-line="538" selection-end-column="108" />
+            <state relative-caret-position="263">
+              <caret line="226" column="5" selection-start-line="226" selection-start-column="5" selection-end-line="226" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue">
+        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="121" column="14" selection-start-line="94" selection-start-column="8" selection-end-line="121" selection-end-column="14" />
+            <state relative-caret-position="-2148">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
-                <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -212,17 +226,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/healths-history/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="51">
+              <caret line="3" column="80" selection-start-line="3" selection-start-column="80" selection-end-line="3" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/HealthController.php">
+        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/healths-history.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="171" column="5" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -231,36 +248,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Thuốc chữa bệnh</find>
-      <find>drugs</find>
-      <find>temp.drugs</find>
-      <find>department</find>
-      <find>Địa điểm khám</find>
-      <find>Nhập id</find>
-      <find>Nhập id đợt khám bệnh (nếu có)</find>
-      <find>id đợt</find>
-      <find>temp.quantum</find>
-      <find>Actions</find>
-      <find>Xóa đợ</find>
-      <find>click</find>
-      <find>reportItem</find>
-      <find>Logout</find>
-      <find>All rights reserved.</find>
-      <find>Book Boss Flight</find>
-      <find>°F</find>
-      <find>APPL</find>
-      <find>Quản lý</find>
-      <find>href=&quot;#&quot;</find>
-      <find>pie-chart</find>
       <find>New Web Design</find>
       <find>modal('show</find>
-      <find>form</find>
       <find>mo</find>
       <find>Kết quả</find>
       <find>modal fade</find>
       <find>Thông tin cá nhân</find>
       <find>modal-default</find>
       <find>replace-password</find>
+      <find>Drug</find>
+      <find>drug</find>
+      <find>action</find>
+      <find>getDrugs</find>
+      <find>form</find>
+      <find>user_id</find>
+      <find>Quản lý sức khỏe giảng viên</find>
+      <find>Tải lên Excel</find>
+      <find>Thông tin cá</find>
+      <find>create-update-item</find>
+      <find>metho</find>
+      <find>Thông tin</find>
+      <find>Page navigation example</find>
+      <find>Nội dung sự cố</find>
+      <find>Tìm kiếm</find>
+      <find>tải lên</find>
+      <find>get</find>
+      <find>create-update</find>
+      <find>create-update-item-excel</find>
+      <find>methods</find>
+      <find>setFile</find>
+      <find>departments</find>
     </findStrings>
     <replaceStrings>
       <replace>Lecture</replace>
@@ -274,6 +291,8 @@
       <replace>healths</replace>
       <replace>°C</replace>
       <replace>:href=&quot;null&quot;</replace>
+      <replace>Trouble</replace>
+      <replace>trouble</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -282,20 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/loader-style.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/lecturer/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/pages/lecturers.js" />
-        <option value="$PROJECT_DIR$/resources/views/department/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/pages/departments.js" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DepartmentController.php" />
-        <option value="$PROJECT_DIR$/resources/views/drug/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/pages/drugs.js" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_30_083102_create_drugs_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DrugController.php" />
-        <option value="$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue" />
-        <option value="$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HealthController.php" />
-        <option value="$PROJECT_DIR$/resources/js/pages/healthes.js" />
         <option value="$PROJECT_DIR$/resources/views/health/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/pages/components/departments-table.vue" />
         <option value="$PROJECT_DIR$/database/migrations/2019_01_08_102335_create_drug_health_table.php" />
@@ -322,17 +327,31 @@
         <option value="$PROJECT_DIR$/resources/views/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LecturerController.php" />
-        <option value="$PROJECT_DIR$/resources/views/healths-history/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/pages/healths-history.js" />
-        <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/resources/sass/spec/mystyle/index.scss" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/HealthController.php" />
-        <option value="$PROJECT_DIR$/resources/js/pages/components/healths-history.vue" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_21_094442_create_troubles_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/TroubleController.php" />
+        <option value="$PROJECT_DIR$/resources/js/pages/troubles.js" />
+        <option value="$PROJECT_DIR$/webpack.mix.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/TroubleController.php" />
+        <option value="$PROJECT_DIR$/resources/views/trouble/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Imports/DrugsImport.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/DrugController.php" />
+        <option value="$PROJECT_DIR$/app/Drug.php" />
+        <option value="$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue" />
+        <option value="$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue" />
+        <option value="$PROJECT_DIR$/resources/views/healths-history/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/pages/components/healths-history.vue" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/LecturerController.php" />
+        <option value="$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue" />
+        <option value="$PROJECT_DIR$/app/Imports/LecturersImport.php" />
       </list>
     </option>
   </component>
@@ -445,6 +464,10 @@
       <path value="$PROJECT_DIR$/vendor/symfony/translation" />
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -476,6 +499,23 @@
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Imports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -487,13 +527,28 @@
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -503,7 +558,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="we&#9;FILE&#9;file://D:/Project/blog/routes/web.php&#10;HomeController&#9;null&#9;null&#10;web&#9;FILE&#9;file://D:/Project/blog/routes/web.php&#10;api&#9;FILE&#9;file://D:/Project/blog/routes/api.php&#10;HealthController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;User&#9;FILE&#9;file://D:/Project/blog/app/User.php&#10;Heal&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;layout&#9;FILE&#9;file://D:/Project/blog/resources/views/layout.blade.php&#10;LecturerController&#9;null&#9;null&#10;index.blade&#9;FILE&#9;file://D:/Project/blog/resources/views/home/index.blade.php&#10;lay&#9;FILE&#9;file://D:/Project/blog/resources/views/layout.blade.php&#10;CheckLogin&#9;null&#9;null&#10;HealthContr&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;Controller&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/HealthController.php&#10;DrugController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/DrugController.php&#10;DepartmentController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/DepartmentController.php&#10;web.php&#9;null&#9;null&#10;Kernel&#9;null&#9;null&#10;api.php&#9;FILE&#9;file://D:/Project/blog/routes/api.php" />
+    <property name="SearchEverywhereHistoryKey" value="DrugController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/DrugController.php&#10;LecturerController&#9;null&#9;null&#10;api&#9;FILE&#9;file://D:/Project/blog/routes/api.php&#10;DrugControl&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/DrugController.php&#10;app.&#9;FILE&#9;file://D:/Project/blog/config/app.php&#10;TroubleController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/TroubleController.php&#10;layout&#9;FILE&#9;file://D:/Project/blog/resources/views/layout.blade.php&#10;web&#9;FILE&#9;file://D:/Project/blog/routes/web.php&#10;we&#9;FILE&#9;file://D:/Project/blog/routes/web.php&#10;HomeController&#9;null&#9;null&#10;HealthController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;User&#9;FILE&#9;file://D:/Project/blog/app/User.php&#10;Heal&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;index.blade&#9;FILE&#9;file://D:/Project/blog/resources/views/home/index.blade.php&#10;lay&#9;FILE&#9;file://D:/Project/blog/resources/views/layout.blade.php&#10;CheckLogin&#9;null&#9;null&#10;HealthContr&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;Controller&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/HealthController.php&#10;DepartmentController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/DepartmentController.php&#10;web.php&#9;null&#9;null&#10;Kernel&#9;null&#9;null&#10;api.php&#9;FILE&#9;file://D:/Project/blog/routes/api.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -511,15 +566,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\blog\resources\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Project\blog\resources\js\pages\components" />
       <recent name="D:\Project\blog\resources\js\pages" />
       <recent name="D:\Project\blog\resources\views" />
       <recent name="D:\Project\blog\resources\sass" />
       <recent name="D:\Project\blog\resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Project\blog\resources\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -565,18 +620,18 @@
       <workItem from="1549795712250" duration="12338000" />
       <workItem from="1549854315318" duration="10616000" />
       <workItem from="1549892646117" duration="14000" />
-      <workItem from="1550736972050" duration="5014000" />
+      <workItem from="1550736972050" duration="8849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62178000" />
+    <option name="totallyTimeSpent" value="66013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24205749" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24205749" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -591,7 +646,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.31914893" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.31914893" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -605,94 +660,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_08_102335_create_drug_health_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_30_083102_create_drugs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/healths-table.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/chart.js/samples/scales/time/financial.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="202" column="14" selection-start-line="193" selection-start-column="11" selection-end-line="202" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PeriodicController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Periodic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/PeriodicController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="148" column="26" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/src/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/robots.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/mix-manifest.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-672" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/departments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="12226" column="5" selection-start-line="12226" selection-start-column="5" selection-end-line="12226" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -817,13 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/pages/healths-history.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -838,22 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DepartmentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1165" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/pages/components/periodics-table.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="303" column="23" selection-start-line="287" selection-start-column="35" selection-end-line="303" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/DepartmentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="135" column="43" lean-forward="true" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -878,13 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/spec/mystyle/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -899,13 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/healths-history/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/drugs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
@@ -916,30 +850,10 @@
     <entry file="file://$PROJECT_DIR$/resources/js/pages/drugs.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="121" column="14" selection-start-line="94" selection-start-column="8" selection-end-line="121" selection-end-column="14" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/src/forms.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="112" column="42" selection-start-line="112" selection-start-column="42" selection-end-line="112" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/healths-history.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,18 +876,184 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+        <state relative-caret-position="221">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_21_094442_create_troubles_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/DepartmentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="135" column="43" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DepartmentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/pages/troubles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TroubleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+          <folding>
+            <element signature="e#44#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/trouble/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="80" selection-start-line="3" selection-start-column="80" selection-end-line="3" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TroubleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="149" column="10" selection-start-line="149" selection-start-column="10" selection-end-line="149" selection-end-column="10" />
+        <state relative-caret-position="198">
+          <caret line="269" column="64" selection-start-line="269" selection-start-column="64" selection-end-line="269" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/healths-table.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="62" column="120" selection-start-line="62" selection-start-column="120" selection-end-line="62" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Drug.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Imports/DrugsImport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="226" column="5" selection-start-line="226" selection-start-column="5" selection-end-line="226" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2148">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
-            <element signature="e#5102#5109#1#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/healths-history/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="80" selection-start-line="3" selection-start-column="80" selection-end-line="3" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/healths-history.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="212" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="e#3308#3315#1" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="201" column="32" selection-start-line="201" selection-start-column="32" selection-end-line="201" selection-end-column="32" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/DrugController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="153" column="32" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/LecturerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="148" column="33" lean-forward="true" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
+          <folding>
+            <element signature="e#44#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Imports/LecturersImport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
         </state>
       </provider>
     </entry>

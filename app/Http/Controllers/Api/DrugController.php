@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Api;
 
 use App\Drug;
+use App\Imports\DrugsImport;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Schema;
+use Maatwebsite\Excel\Facades\Excel;
 
 class DrugController extends Controller
 {
@@ -145,5 +147,11 @@ class DrugController extends Controller
         $drug = Drug::findOrFail($id);
         $drug->delete();
         return $drug;
+    }
+    public function excel(Request $request){
+        Excel::import(new DrugsImport(), $request->file('file'));
+        return [
+            'message' => 'success'
+        ];
     }
 }
