@@ -13,7 +13,9 @@
 
 Route::group(['middleware' => 'check.login'],function(){
     Route::get('/',['uses' => 'HomeController@index','as' => 'home']);
+    Route::post('/replace-password',['uses' => 'HomeController@replacePassword','as' => 'replace-password']);
     Route::resource('/lecturers','LecturerController')->middleware('check.bomon');
+    Route::get('/healths-history','LecturerController@healthsHistory')->middleware('check.giaovien')->name('healths-history');
     Route::resource('/departments','DepartmentController')->middleware('check.bomon');
     Route::resource('/drugs','DrugController')->middleware('check.yte');
     Route::resource('/healths','HealthController')->middleware('check.yte');

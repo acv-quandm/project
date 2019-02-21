@@ -5,8 +5,10 @@ namespace App\Http\Controllers\Api;
 use App\Department;
 use App\Drug;
 use App\Health;
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Schema;
 
 class HealthController extends Controller
@@ -167,5 +169,21 @@ class HealthController extends Controller
         $health->delete();
         $health->drugs_health()->delete();
         return $health;
+    }
+    public function getHistory($id){
+        //lay id giang vien
+        $user = User::findOrFail($id);
+        $lecturer = $user->lecturer;
+        $heals = $lecturer->healths;
+        $response = [];
+        foreach ($heals as $heal){
+            $db = Health::find($heal->id);
+            $db->drugs_health = $db->drugs_health;
+            foreach ($db->drugs_health as $item){
+                $item->drug = Drug::find($item->drug_id);
+            }
+            $response[] = $db;
+        }
+        return $response;
     }
 }

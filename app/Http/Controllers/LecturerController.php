@@ -81,4 +81,7 @@ class LecturerController extends Controller
     {
         //
     }
+    public function healthsHistory(){
+        return view('healths-history/index');
+    }
 }

@@ -96,7 +96,7 @@
                 @endif
                 @if(\Illuminate\Support\Facades\Auth::user()->type == 4)
                 <li class="nav-item">
-                    <a class='sidebar-link' href="#">
+                    <a class='sidebar-link' href="{{route('healths-history')}}">
                 <span class="icon-holder">
                   <i class="c-light-blue-500 ti-pencil"></i>
                 </span>
@@ -107,10 +107,48 @@
             </ul>
         </div>
     </div>
+    <div class="modal fade" id="replace-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <form action="/replace-password" method="post">
+                    @csrf
+                    <div class="modal-header">
+                        <h5 class="modal-title">Đổi mật khẩu</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
 
-    <!-- #Main ============================ -->
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Mật khẩu cũ</label>
+                            <input type="password" class="form-control" name="old_password" required placeholder="Mật khẩu cũ">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Mật khẩu mới</label>
+                            <input type="password" class="form-control" name="new_password" required placeholder="Mật khẩu mới">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Nhập lại mật khẩu mới</label>
+                            <input type="password" class="form-control" name="rep_new_password" required placeholder="Nhập lại mật khẩu mới">
+                        </div>
+                    </div>
+                    <div class="row" v-if="loading">
+                        <div class="col-md-12">
+                            <div class="loader">
+                                <div class="loader-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-info">Đổi mật khẩu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <div class="page-container">
-        <!-- ### $Topbar ### -->
         <div class="header navbar">
             <div class="header-container">
                 <ul class="nav-left">
@@ -219,7 +257,12 @@
                                     <span>Thông tin cá nhân</span>
                                 </a>
                             </li>
-                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="" data-toggle="modal" data-target="#replace-password" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
+                                    <i class="icon icon-lock"></i>
+                                    <span>Đổi mật khẩu</span>
+                                </a>
+                            </li>
                             <li>
                                 <a href="/logout" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
                                     <i class="ti-power-off mR-10"></i>
@@ -231,7 +274,7 @@
                 </ul>
             </div>
         </div>
-        <main class='main-content bgc-grey-100'>
+        <main class='main-content'>
             @section('main-content')
                 @show
         </main>
