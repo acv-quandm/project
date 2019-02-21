@@ -36,7 +36,6 @@ class LecturersImport implements ToModel
             }
         }
 
-
         return [
 
         ];
