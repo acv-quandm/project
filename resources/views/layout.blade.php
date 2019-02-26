@@ -50,6 +50,16 @@
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
+                @if(\Illuminate\Support\Facades\Auth::user()->type == 3)
+                    <li class="nav-item">
+                        <a class='sidebar-link' href="{{route('annunciates.index')}}">
+                <span class="icon-holder">
+                  <i class="c-brown-500 icon icon-stats-bars"></i>
+                </span>
+                            <span class="title">Xem báo cáo</span>
+                        </a>
+                    </li>
+                @endif
                 @if(\Illuminate\Support\Facades\Auth::user()->type == 2)
                 <li class="nav-item">
                     <a class='sidebar-link' href="{{route('lecturers.index')}}">
@@ -85,6 +95,14 @@
                         <span class="title">Quản lý đợt khám</span>
                     </a>
                 </li>
+                    <li class="nav-item">
+                        <a class='sidebar-link' href="{{route('reports.index')}}">
+                <span class="icon-holder">
+                  <i class="c-deep-purple-500 icon icon-reply"></i>
+                </span>
+                            <span class="title">Quản lý báo cáo</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a class='sidebar-link' href="{{route('troubles.index')}}">
                 <span class="icon-holder">

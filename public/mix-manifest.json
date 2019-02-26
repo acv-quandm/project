@@ -2,10 +2,12 @@
     "/js/common.js": "/js/common.js",
     "/css/style.css": "/css/style.css",
     "/js/periodics.js": "/js/periodics.js",
+    "/js/reports.js": "/js/reports.js",
     "/js/healths-history.js": "/js/healths-history.js",
     "/js/troubles.js": "/js/troubles.js",
     "/js/lecturers.js": "/js/lecturers.js",
     "/js/healths.js": "/js/healths.js",
     "/js/drugs.js": "/js/drugs.js",
-    "/js/departments.js": "/js/departments.js"
+    "/js/departments.js": "/js/departments.js",
+    "/js/annunciates.js": "/js/annunciates.js"
 }

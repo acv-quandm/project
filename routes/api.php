@@ -21,5 +21,6 @@ Route::post('lecturers/excel','LecturerController@excel');
 Route::resource('healths','HealthController');
 Route::resource('periodics','PeriodicController');
 Route::resource('troubles','TroubleController');
+Route::resource('reports','ReportController');
 Route::post('periodics/{id}/report','PeriodicController@report');
 Route::post('{id}/healing-history','HealthController@getHistory');

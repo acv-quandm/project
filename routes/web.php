@@ -21,6 +21,8 @@ Route::group(['middleware' => 'check.login'],function(){
     Route::resource('/healths','HealthController')->middleware('check.yte');
     Route::resource('/periodics','PeriodicController')->middleware('check.yte');
     Route::resource('/troubles','TroubleController')->middleware('check.yte');
+    Route::resource('/reports','ReportController')->middleware('check.yte');
+    Route::get('/annunciates','AnnunciateController@index')->middleware('check.daotao')->name('annunciates.index');
 });
 Route::get('/login',['uses' => 'AuthController@login','as' => 'login']);
 Route::get('/logout',['uses' => 'AuthController@logout','as' => 'logout']);

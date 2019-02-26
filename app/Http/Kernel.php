@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use App\Http\Middleware\CheckBanGiamHieu;
+use App\Http\Middleware\CheckDaoTao;
 use App\Http\Middleware\CheckGiaoVien;
 use App\Http\Middleware\CheckLogin;
 use App\Http\Middleware\CheckPhongBoMon;
@@ -71,7 +72,8 @@ class Kernel extends HttpKernel
         'check.giaovien' => CheckGiaoVien::class,
         'check.bomon' => CheckPhongBoMon::class,
         'check.bangiamhieu' => CheckBanGiamHieu::class,
-        'check.yte' => CheckPhongYTe::class
+        'check.yte' => CheckPhongYTe::class,
+        'check.daotao' => CheckDaoTao::class
     ];
 
     /**

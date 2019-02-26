@@ -21,4 +21,6 @@ mix.js('resources/js/pages/healths.js', 'public/js/healths.js')
 mix.js('resources/js/pages/troubles.js', 'public/js/troubles.js')
 mix.js('resources/js/pages/healths-history.js', 'public/js/healths-history.js')
 mix.js('resources/js/pages/periodics.js', 'public/js/periodics.js')
+mix.js('resources/js/pages/annunciates.js', 'public/js/annunciates.js')
+mix.js('resources/js/pages/reports.js', 'public/js/reports.js')
 mix.copyDirectory('resources/static', 'public/assets/static');
