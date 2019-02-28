@@ -69,7 +69,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thêm một báo cáo</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">{{action == 'create' ? 'Thêm một báo cáo' : 'Chỉnh sửa báo cáo'}}</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -127,7 +127,7 @@
                     <form @submit.prevent="removeItem">
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-danger">Xóa đợt khám này</button>
+                            <button type="submit" class="btn btn-danger">Xóa</button>
                         </div>
                     </form>
                 </div>

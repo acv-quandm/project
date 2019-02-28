@@ -34,6 +34,7 @@
                                 <th scope="row">{{item.id}}</th>
                                 <td>{{item.name}}</td>
                                 <td>{{item.content}}</td>
+                                <td>{{item.user.name}}</td>
                                 <td>
                                     <button class="btn btn-info" @click="editItem(item.id)">Sửa</button>
                                     <button class="btn btn-danger" @click="deleteItem(item.id)">Xóa</button>
@@ -64,7 +65,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thêm một đợt khám</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">{{action == 'create' ? 'Thêm một sự cố' : 'Chỉnh sửa sự cố'}}</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -122,7 +123,7 @@
                     <form @submit.prevent="removeItem">
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-danger">Xóa giảng viên này</button>
+                            <button type="submit" class="btn btn-danger">Xóa</button>
                         </div>
                     </form>
                 </div>

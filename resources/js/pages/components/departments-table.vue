@@ -102,7 +102,7 @@
                     <form @submit.prevent="removeItem">
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-danger">Xóa mục này</button>
+                            <button type="submit" class="btn btn-danger">Xóa</button>
                         </div>
                     </form>
                 </div>

@@ -14,7 +14,7 @@ class TroubleController extends Controller
     public function index(Request $request)
     {
         $data = new Trouble();
-
+        $data = $data->with('user');
         if($request->has('query'))
         {
             if($request->input('query') != null && $request->input('query') != '')
