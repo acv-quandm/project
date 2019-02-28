@@ -15,6 +15,7 @@ class ReportController extends Controller
     public function index(Request $request)
     {
         $data = new Report();
+
         $data = $data->with('user');
 
         if($request->has('query'))

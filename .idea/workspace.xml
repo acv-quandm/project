@@ -6,28 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f94c40f5-15d8-4287-acec-b9b507136eb2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/TroubleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TroubleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Periodic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Periodic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Trouble.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Trouble.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/annunciates.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/annunciates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/departments.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/departments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/drugs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/drugs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/healths-history.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/healths-history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/healths.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/healths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/lecturers.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/lecturers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/periodics.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/periodics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/reports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/troubles.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/troubles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/annunciates-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/annunciates-table.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/departments-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/departments-table.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/healths-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/healths-table.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/periodics-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/periodics-table.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/reports-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/reports-table.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +64,7 @@
           <entry key="html" value="10" />
           <entry key="js" value="35" />
           <entry key="json" value="5" />
-          <entry key="php" value="163" />
+          <entry key="php" value="165" />
           <entry key="scss" value="1" />
           <entry key="txt" value="1" />
           <entry key="vue" value="31" />
@@ -98,7 +78,7 @@
           <entry key="HTML" value="10" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="35" />
-          <entry key="PHP" value="133" />
+          <entry key="PHP" value="135" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="1" />
           <entry key="Vue.js" value="31" />
@@ -109,7 +89,7 @@
           <entry key="dummy" value="3" />
           <entry key="env" value="40" />
           <entry key="js" value="377" />
-          <entry key="php" value="10655" />
+          <entry key="php" value="10680" />
           <entry key="scss" value="1" />
           <entry key="vue" value="9101" />
         </counts>
@@ -119,7 +99,7 @@
           <entry key=".env file" value="40" />
           <entry key="Blade" value="2988" />
           <entry key="JavaScript" value="377" />
-          <entry key="PHP" value="7667" />
+          <entry key="PHP" value="7692" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="1" />
           <entry key="Vue.js" value="9101" />
@@ -147,23 +127,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+            <state relative-caret-position="105">
+              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/periodics-table.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
-              <caret line="147" column="46" selection-start-line="147" selection-start-column="46" selection-end-line="147" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -180,8 +151,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/PeriodicController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="204">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="36" />
+              <folding>
+                <element signature="e#44#59#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Report.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -199,7 +191,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TroubleController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding>
                 <element signature="e#1375#2019#0#PHP" />
               </folding>
@@ -207,24 +199,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Trouble.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="134" column="100" selection-start-line="134" selection-start-column="100" selection-end-line="134" selection-end-column="100" />
-              <folding>
-                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#div#3;n#div#0;n#template#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -261,8 +240,8 @@
       <find>Người tạo</find>
       <find>Chi tiết thông báo</find>
       <find>Chỉnh sửa hồ sơ</find>
-      <find>Xóa</find>
       <find>Xóa mục này</find>
+      <find>Xóa</find>
     </findStrings>
     <replaceStrings>
       <replace>Lecture</replace>
@@ -320,7 +299,6 @@
         <option value="$PROJECT_DIR$/resources/js/pages/reports.js" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/resources/views/report/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php" />
         <option value="$PROJECT_DIR$/resources/views/home/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/annunciate/index.blade.php" />
         <option value="$PROJECT_DIR$/webpack.mix.js" />
@@ -336,10 +314,11 @@
         <option value="$PROJECT_DIR$/app/Periodic.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/PeriodicController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/TroubleController.php" />
-        <option value="$PROJECT_DIR$/app/Trouble.php" />
         <option value="$PROJECT_DIR$/resources/js/pages/components/annunciates-table.vue" />
         <option value="$PROJECT_DIR$/resources/js/pages/components/reports-table.vue" />
         <option value="$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php" />
+        <option value="$PROJECT_DIR$/app/Trouble.php" />
       </list>
     </option>
   </component>
@@ -610,12 +589,12 @@
       <workItem from="1550736972050" duration="9072000" />
       <workItem from="1550807431831" duration="43000" />
       <workItem from="1551162585608" duration="3433000" />
-      <workItem from="1551337417240" duration="1203000" />
+      <workItem from="1551337417240" duration="1747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70915000" />
+    <option name="totallyTimeSpent" value="71459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -793,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Report.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_26_063636_create_reports_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -849,13 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="23" column="43" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -967,30 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/PeriodicController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TroubleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#1375#2019#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Trouble.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -1014,11 +955,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        <state relative-caret-position="105">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/PeriodicController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <element signature="e#44#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TroubleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#1375#2019#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Trouble.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
         </state>
       </provider>
     </entry>
