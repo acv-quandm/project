@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php" line="17" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php" line="21" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f94c40f5-15d8-4287-acec-b9b507136eb2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Trouble.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Trouble.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_30_083044_create_lecturers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_30_083044_create_lecturers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/annunciates.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/annunciates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/departments.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/departments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/drugs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/drugs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/healths.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/healths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/lecturers.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/lecturers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/periodics.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/periodics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/troubles.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/troubles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/annunciates-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/annunciates-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/departments-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/departments-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/drugs-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/healths-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/healths-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/periodics-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/periodics-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/reports-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/reports-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,16 +53,19 @@
     <session id="-462513981">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="27" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.18" value="3" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.28" value="2" />
-          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="2" />
           <entry key="project.open.time.4" value="1" />
@@ -54,7 +74,7 @@
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,10 +84,10 @@
           <entry key="html" value="10" />
           <entry key="js" value="35" />
           <entry key="json" value="5" />
-          <entry key="php" value="165" />
+          <entry key="php" value="172" />
           <entry key="scss" value="1" />
           <entry key="txt" value="1" />
-          <entry key="vue" value="31" />
+          <entry key="vue" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -78,10 +98,10 @@
           <entry key="HTML" value="10" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="35" />
-          <entry key="PHP" value="135" />
+          <entry key="PHP" value="142" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="1" />
-          <entry key="Vue.js" value="31" />
+          <entry key="Vue.js" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -89,9 +109,9 @@
           <entry key="dummy" value="3" />
           <entry key="env" value="40" />
           <entry key="js" value="377" />
-          <entry key="php" value="10680" />
+          <entry key="php" value="12352" />
           <entry key="scss" value="1" />
-          <entry key="vue" value="9101" />
+          <entry key="vue" value="9251" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -99,10 +119,10 @@
           <entry key=".env file" value="40" />
           <entry key="Blade" value="2988" />
           <entry key="JavaScript" value="377" />
-          <entry key="PHP" value="7692" />
+          <entry key="PHP" value="9364" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="1" />
-          <entry key="Vue.js" value="9101" />
+          <entry key="Vue.js" value="9251" />
         </counts>
       </usages-collector>
     </session>
@@ -110,19 +130,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/annunciates-table.vue">
+        <entry file="file://$PROJECT_DIR$/app/Trouble.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+            <state relative-caret-position="119">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/reports-table.vue">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="71" column="71" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="136" />
+            <state relative-caret-position="272">
+              <caret line="25" column="40" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-136">
+              <caret line="43" column="27" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="27" />
+              <folding>
+                <element signature="e#40#53#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Imports/DrugsImport.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_06_030928_create_healths_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/annunciates-table.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1220">
+              <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -130,8 +198,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+            <state relative-caret-position="680">
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -140,70 +208,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_30_083102_create_drugs_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="289">
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/PeriodicController.php">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_30_083044_create_lecturers_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="36" />
-              <folding>
-                <element signature="e#44#59#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Report.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Periodic.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TroubleController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding>
-                <element signature="e#1375#2019#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Trouble.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            <state relative-caret-position="306">
+              <caret line="20" column="42" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -212,10 +229,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>form</find>
-      <find>user_id</find>
-      <find>Quản lý sức khỏe giảng viên</find>
-      <find>Tải lên Excel</find>
       <find>Thông tin cá</find>
       <find>create-update-item</find>
       <find>metho</find>
@@ -242,6 +255,10 @@
       <find>Chỉnh sửa hồ sơ</find>
       <find>Xóa mục này</find>
       <find>Xóa</find>
+      <find>this.list = response.data.data</find>
+      <find>this.last_page = response.data.last_page</find>
+      <find>&lt;template v-for=&quot;i in last_page&quot;&gt;</find>
+      <find>last_page</find>
     </findStrings>
     <replaceStrings>
       <replace>Lecture</replace>
@@ -260,6 +277,7 @@
       <replace>Report</replace>
       <replace>Chỉnh sửa hồ sơ</replace>
       <replace>Xóa</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -268,7 +286,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Middleware/CheckLogin.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/CheckPhongBoMon.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/CheckPhongYTe.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/CheckBanGiamHieu.php" />
@@ -279,7 +296,6 @@
         <option value="$PROJECT_DIR$/resources/sass/spec/mystyle/index.scss" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/HealthController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_21_094442_create_troubles_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TroubleController.php" />
         <option value="$PROJECT_DIR$/resources/js/pages/troubles.js" />
@@ -291,7 +307,6 @@
         <option value="$PROJECT_DIR$/resources/views/healths-history/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/pages/components/healths-history.vue" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/LecturerController.php" />
-        <option value="$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue" />
         <option value="$PROJECT_DIR$/app/Imports/LecturersImport.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_26_063636_create_reports_table.php" />
         <option value="$PROJECT_DIR$/app/Report.php" />
@@ -304,7 +319,6 @@
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AnnunciateController.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/CheckDaoTao.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/resources/js/pages/annunciates.js" />
@@ -314,11 +328,15 @@
         <option value="$PROJECT_DIR$/app/Periodic.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/PeriodicController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/TroubleController.php" />
-        <option value="$PROJECT_DIR$/resources/js/pages/components/annunciates-table.vue" />
         <option value="$PROJECT_DIR$/resources/js/pages/components/reports-table.vue" />
         <option value="$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php" />
         <option value="$PROJECT_DIR$/app/Trouble.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_30_083044_create_lecturers_table.php" />
+        <option value="$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/js/pages/components/annunciates-table.vue" />
       </list>
     </option>
   </component>
@@ -473,16 +491,7 @@
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="Imports" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -494,27 +503,6 @@
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -523,7 +511,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="layout&#9;FILE&#9;file://D:/Project/blog/resources/views/layout.blade.php&#10;web&#9;FILE&#9;file://D:/Project/blog/routes/web.php&#10;AnnunciateController&#9;null&#9;null&#10;ReportController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/ReportController.php&#10;api&#9;FILE&#9;file://D:/Project/blog/routes/api.php&#10;ReportC&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/ReportController.php&#10;api.&#9;FILE&#9;file://D:/Project/blog/routes/api.php&#10;DrugController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/DrugController.php&#10;LecturerController&#9;null&#9;null&#10;DrugControl&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/DrugController.php&#10;app.&#9;FILE&#9;file://D:/Project/blog/config/app.php&#10;TroubleController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/TroubleController.php&#10;we&#9;FILE&#9;file://D:/Project/blog/routes/web.php&#10;HomeController&#9;null&#9;null&#10;HealthController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;User&#9;FILE&#9;file://D:/Project/blog/app/User.php&#10;Heal&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;index.blade&#9;FILE&#9;file://D:/Project/blog/resources/views/home/index.blade.php&#10;lay&#9;FILE&#9;file://D:/Project/blog/resources/views/layout.blade.php&#10;CheckLogin&#9;null&#9;null&#10;HealthContr&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;Controller&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/HealthController.php&#10;DepartmentController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/DepartmentController.php&#10;web.php&#9;null&#9;null&#10;Kernel&#9;null&#9;null&#10;api.php&#9;FILE&#9;file://D:/Project/blog/routes/api.php" />
+    <property name="SearchEverywhereHistoryKey" value="HomeController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/HomeController.php&#10;web.php&#9;FILE&#9;file://D:/Project/blog/routes/web.php&#10;layout&#9;FILE&#9;file://D:/Project/blog/resources/views/layout.blade.php&#10;web&#9;FILE&#9;file://D:/Project/blog/routes/web.php&#10;AnnunciateController&#9;null&#9;null&#10;ReportController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/ReportController.php&#10;api&#9;FILE&#9;file://D:/Project/blog/routes/api.php&#10;ReportC&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/ReportController.php&#10;api.&#9;FILE&#9;file://D:/Project/blog/routes/api.php&#10;DrugController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/DrugController.php&#10;LecturerController&#9;null&#9;null&#10;DrugControl&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/DrugController.php&#10;app.&#9;FILE&#9;file://D:/Project/blog/config/app.php&#10;TroubleController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/TroubleController.php&#10;we&#9;FILE&#9;file://D:/Project/blog/routes/web.php&#10;HealthController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;User&#9;FILE&#9;file://D:/Project/blog/app/User.php&#10;Heal&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;index.blade&#9;FILE&#9;file://D:/Project/blog/resources/views/home/index.blade.php&#10;lay&#9;FILE&#9;file://D:/Project/blog/resources/views/layout.blade.php&#10;CheckLogin&#9;null&#9;null&#10;HealthContr&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/HealthController.php&#10;Controller&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/HealthController.php&#10;DepartmentController&#9;FILE&#9;file://D:/Project/blog/app/Http/Controllers/Api/DepartmentController.php&#10;Kernel&#9;null&#9;null&#10;api.php&#9;FILE&#9;file://D:/Project/blog/routes/api.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -589,18 +577,22 @@
       <workItem from="1550736972050" duration="9072000" />
       <workItem from="1550807431831" duration="43000" />
       <workItem from="1551162585608" duration="3433000" />
-      <workItem from="1551337417240" duration="1747000" />
+      <workItem from="1551337417240" duration="1799000" />
+      <workItem from="1551342315724" duration="369000" />
+      <workItem from="1551368879742" duration="2243000" />
+      <workItem from="1551371246325" duration="1967000" />
+      <workItem from="1551407443066" duration="1593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71459000" />
+    <option name="totallyTimeSpent" value="77683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41906202" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -629,30 +621,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/sass/spec/mystyle/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/HealthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="171" column="5" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/drugs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="11819" column="37" selection-start-line="11819" selection-start-column="37" selection-end-line="11819" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/pages/drugs.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/src/forms.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -664,16 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="538" column="60" selection-start-line="538" selection-start-column="60" selection-end-line="538" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -723,24 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Imports/DrugsImport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="201" column="32" selection-start-line="201" selection-start-column="32" selection-end-line="201" selection-end-column="32" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#template#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -845,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="94" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckGiaoVien.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -863,9 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="e#39#51#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -901,9 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-867">
           <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,10 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="134" column="100" selection-start-line="134" selection-start-column="100" selection-end-line="134" selection-end-column="100" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#div#0;n#template#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -925,41 +848,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Periodic.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/reports-table.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="1207">
+          <caret line="71" column="71" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="136" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
+        <state relative-caret-position="442">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/annunciates-table.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/reports-table.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="71" column="71" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,37 +869,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Report.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="238">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ReportController.php">
+    <entry file="file://$PROJECT_DIR$/app/Report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="e#44#59#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_08_102335_create_drug_health_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Periodic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TroubleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="204">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#1375#2019#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Trouble.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/lecturers-table.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/troubles-table.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_30_083102_create_drugs_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_30_083044_create_lecturers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_06_030928_create_healths_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/pages/components/annunciates-table.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1220">
+          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="27" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Imports/DrugsImport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>

@@ -1,9 +1,6 @@
 <template>
     <div class="container-fluid">
         <h4 class="c-grey-900 mT-10 mB-30">Danh sách báo cáo</h4>
-        <div style="display: inline-block;">
-            <button type="button" class="btn btn-info mB-20" data-toggle="modal" data-target="#create-update-item" @click="action = 'create';resetTemp()">Thêm mới</button>
-        </div>
         <div class="row">
             <div class="col-12">
                 <div class="form-group">
@@ -53,7 +50,8 @@
                                 <a class="page-link" href="#" @click="getInfo(page-1,query)" v-if="page > 1" tabindex="-1">Previous</a>
                             </li>
                             <template v-for="i in last_page">
-                                <li :class="'page-item' + (page == i ? ' active': '') "><a class="page-link" @click="getInfo(i,query)" href="#">{{i}}</a></li>
+                                <li v-if="(i <= page + 2 && i >= page - 2) || i > last_page - 3" :class="'page-item' + (page == i ? ' active': '') "><a class="page-link" @click="getInfo(i,query)" href="#">{{i}}</a></li>
+                                <li v-if="i == page+5"><a class="page-link" href="#">.....</a></li>
                             </template>
 
                             <li class="page-item">
@@ -129,6 +127,8 @@
                     }
                 }).then(response => {
                     this.list = response.data.data
+                    this.last_page = response.data.last_page
+                    this.page = response.data.current_page
                 })
             },
             resetTemp(){

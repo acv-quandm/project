@@ -25,7 +25,6 @@ class CreateLecturersTable extends Migration
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *

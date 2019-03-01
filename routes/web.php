@@ -23,6 +23,7 @@ Route::group(['middleware' => 'check.login'],function(){
     Route::resource('/troubles','TroubleController')->middleware('check.yte');
     Route::resource('/reports','ReportController')->middleware('check.yte');
     Route::get('/annunciates','AnnunciateController@index')->middleware('check.daotao')->name('annunciates.index');
+    Route::get('/insert','HomeController@insert');
 });
 Route::get('/login',['uses' => 'AuthController@login','as' => 'login']);
 Route::get('/logout',['uses' => 'AuthController@logout','as' => 'logout']);
